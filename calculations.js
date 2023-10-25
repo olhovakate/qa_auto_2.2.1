@@ -14,7 +14,9 @@ function divideBalanceByAccounts(x, y) {
 }
 
 function getRestAfterDivision(x, y) {
-  x %= y;
+  y = --y; // добавила декремент, уменьшили до 2
+  x = ++x; //добавила инкремент, увеличили до 8
+  x %= y; //нет остатка
   return x;
 }
 
