@@ -12,8 +12,5 @@
     "test",
     "function"
   ],
-  "author": "KOlkhova",
-  "devDependencies": {
-    "jest": "^29.7.0"
-  }
+  "author": "KOlkhova"
 }
