@@ -5,7 +5,7 @@ class Button {
     this.width = widht;
     this.height = height;
   }
-  PressOnClick() {
+  onClick() {
     console.log(`onClick ${this.type}`);
   }
 }
