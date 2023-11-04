@@ -52,7 +52,7 @@ let yearlyExpences = expencesExamples[value].yearlyExpences;
 });
  console.log (sum1);*/
 
-expencesExamples.forEach(function (expensesExample, index) {
+/*expencesExamples.forEach(function (expensesExample, index) {
   let sum = 0;
   expensesExample.yearlyExpences.forEach(function (expense) {
     if (expense > 1000) {
@@ -60,4 +60,21 @@ expencesExamples.forEach(function (expensesExample, index) {
     }
   });
   console.log(`Сумма затрат выше 1000 для массива ${index + 1}: ${sum}`);
+});*/
+
+expencesExamples.forEach(function (expensesExample, index) {
+  let months = [];
+  expensesExample.yearlyExpences.forEach(function (expense, monthIndex) {
+    if (expense <= 1000) {
+      let monthName = new Date((monthIndex + 1).toString()).toLocaleString(
+        "default",
+        { month: "long" }
+      );
+      months.push(monthName);
+    }
+  });
+
+  console.log(
+    `Месяцы с затратами <= 1000 для массива ${index + 1}: ${months.join(", ")}`
+  );
 });
