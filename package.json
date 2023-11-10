@@ -1,11 +1,11 @@
 {
-  "name": "first_project_nodejs",
+  "name": "qa_auto_2.2.1",
   "version": "1.0.0",
   "description": "my project",
-  "main": "calculations.js",
+  "main": "calculateBonus",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "npm",
